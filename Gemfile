@@ -30,6 +30,11 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+group :test do
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'database_cleaner', '~> 1.6', '>= 1.6.2'
+end
+
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
